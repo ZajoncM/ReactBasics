@@ -2,7 +2,7 @@ import {useState} from "react";
 import Heading from '../atoms/Heading';
 import Number from "../atoms/Number";
 import Button from "../atoms/Button";
-
+import List from "../molecules/List";
 
 
 const Panel = () => {
@@ -15,6 +15,7 @@ const Panel = () => {
             </Heading>
             <Number number={idleNumber}/>
             <Button handleClick={() => setIdleNumber(idleNumber + 1)}/>
+            <List number={idleNumber}/>
         </>
     );
 }
